@@ -1,0 +1,97 @@
+http://google.com - This is a domain name
+
+http://google.com:8080/search?term=hello#result1
+
+http://       google.com    :8080   /search     ?term=hello     #result1
+Scheme     Domain          Port     Path          Query String    Fragment (fragment identifier)
+
+scheme://domain:port/path?querystring#fragment
+    
+Requests: HTTP, FTP, SMTP, SSH, Telnet and so on.
+
+Verbs: GET will be a request to get information from the server. POST is to send data to the server. PUT update some data on the server. PATCH partially modify some data. DELETE will remove data on the server.
+
+CRUD:
+
+Create - POST
+Read - GET
+Update/Replace - PUT
+Update/Modify - PATCH
+Delete - DELETE
+
+How to create a file in the folder "Todo" ?
+
+POST /todo 
+title: "Buy something" due: 2014-04-01
+
+title: is a tag that is used to add a title.
+
+due: is a tag used for dates
+
+? is always used before the querystring. 
++ is used for a space in the URL
+# is used before a fragment is inserted. (A fragment is a pointer to some content on a webpage)
+
+So to create in using POST in I'm Only Resting
+
+http://lacedeamon.spartaglobal.com/todos?tite=haridas&due=2014-12-2
+
+To update an entry using PUT
+
+http://lacedeamon.spartaglobal.com/todos/6755?title=haridas nykiel&due=2014-12-3
+
+The syntax is not always the same for each server.
+
+REST
+
+Scalability
+Created to accommodate for future growth
+
+Performance
+Stress testing: is how much can it handle at the maximum.
+Load testing:
+
+
+HTTP Status Codes
+
+    * 200 OK (successful)
+    * 201 Created
+    * 204 No Content
+    * 300 (moved resource)
+    * 301 redirect
+    * 400 (Client error)
+    * 404 bad request
+    * 403 forbidden
+    * 405 method not allowed
+    * 500 (server errors)
+ 
+This is also a markup language. You cannot invent your own tags.
+
+Look for a logical and coherent structure.
+
+<!doctype>
+<html> (this is to explain that it is a HTML doc)
+    <head> 
+         <title>This is a Title</title>
+    </head>
+    <body>
+         <section>
+              <h1>Joe</h1> (This a heading, which will have larger text size. There can up to <h6>)
+              <p>078977785674</p> (This is a paragraph, by default it will output using normal spaces between words)
+              <p><a href="...">joe@hotmail.com</a> (This tag is generally used to produce links/Anchors, inline.)</p>
+              <img src=>
+         </section>
+    </body>
+</html>
+
+<stong>BOLD TEXT</strong> (This is to make the text bold, inline tag)
+<b></b>(This will make text bold for keywords)
+
+<em>Emphasized text</em> (This will be used for text you are trying to emphasize, inline.)
+
+<div></div> (can be used to structure and group elements)
+
+<ul></ul> (is an unordered list, only children you can have is <li>.)
+<li></li>(is a list item, it is an ordered list. )
+<ol></ol>(is an ordered list Order does matter.)
+<img src="image.jpg"> (this is an inline tag which will output an image.)
