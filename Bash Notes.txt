@@ -18,17 +18,40 @@ if you dont provide a new name but new location with new name
 if new location which doesnt exist renames it to the new location name, make sure location exists
 mv = moves folder to new location, cut and paste 
 rm = removes file
-rm -r = recurse over stuff inside and delete all of them
+rm -r = recurse over stuff inside and delete all of them, delete directive and its child directives
 rm -fr= recurse and force deletion of stuff inside
 touch = after command space then creates file with name you give
 mkdir = creates a new directory in the folder you are in
+
+stdin (standard input), information input into the terminal through keyboard or input device
+stdout (standard output), information outputted after a process is run
+stderr (standard error), is an error message outputted by a failed process
+
 echo = spits string it back at you
-(pipe) > = it takes the output of whatever you put before and then stores it in a file at that location
+(redirect) > = it takes the output of whatever you put before and then stores it in a file at that location
 echo "hello" > my file = stores string in that file
+>> = takes stdout of the command on left and adds to the file on the right. So it has two files worth of information 
+< = means stdin of file on the right goes to whatever command on the left. 
+wc = outputs the number of lines, words and characters.
+| (piped) = takes the stdin of the command on the left and pipes as stdin to the command on the right, like command to command redirection 
+sort = takes the stdin orders it alphabetically for stdout
+cat = outputs the contents of a file to the terminal
+uniq (unique) = filters out duplicate and adjacent (one line below or above) lines in a file
+better way to use uniq would be to use sort beforehand
+
+grep (global regular expression print) = searches files for lines that match a pattern and returns the result, it is case sensitive
+so grep Mount mountains.txt returns lines that have Mount in it
+grep -i Mount mountains.txt, makes the grep command case insensitive
+grep -R, searches all files in a directory and outputs file names and the line that have a matched result
+grep -Rl, (-l being used to find 'files with matches') searches directory for the string and outputs the file names only   
+
+sed (stream editor), accepts stdin and modifies it based it on an expression before displaying it as output data, similar to 'find and replace'
+sed s, 's' stand for substition and is always used with sed for substitution
+sed 's/snow/rain/', searces for the string snow and replaces it with rain, only replaces the first instance of snow on a line
+sed 's/snow/rain/g', searches for the string snow globally and replaces all instants of it with rain 
+
 File extensions dont mean shizzle to unix!
 Dont learn vim now but do it later
-cat = just prints out content to the command line
-$home = variable 
 cd "heelo i" = creates folders with spaces
 cd heelo\ i = changes to the folder need to slash because of folder
 touch one two three = creates 3 files
@@ -74,7 +97,29 @@ putty for windows
 .files, hidden files ussually live in your home directory also are configuration files
 pink colour files means links or shortcuts
 
-rm-1 = asks you are ycd u sure you want to delete it using flag
+Use nano
+ctrl + o = save
+ctrl + x = exit
+clear = move the ish up so the terminal is clear
+source = activates changes in the file, makes the changes available right away in the session we are in
+put in echo "The changes have been made"
+alias pd="pwd"
+alias hy="history"
+alias ll="ls -la"
+alias rm="rm-1" = asks you are you sure you want to delete it using flag
+
+Enviornment variables
+export USER="Shorof", set environment variable USER to a name, 
+export makes the variable be available to all child sessions initated from the session you are in. Its a way to make the variable persist across programs.
+echo $user, returns the value  of the variable
+export PS1=">> ", PS1 is a variable that defines the makeup and style of the command prompt, so changes from $ to >>
+echo $HOME = Displays the path of the home directory, dont really need to change HOME
+echo $PATH = stores a list of directories seperated by a colon, each directory contains scripts for the command line to execute, 
+the PATH variable simply lists which directories contain scripts
+most of the command are kept in bin so (bin/pwd = pwd)
+env (environment) = returns a list of the enviroment variables for the current user
+By using env | grep PATH, displays the value of a single enviroment variable which is PATH and outputs it to the terminal
+
 
 -----------------------------------------------------------------------------------
 
@@ -133,7 +178,9 @@ touch
 git commit --ammend -m "Added new files 1 and 2", it will overwrite the message
 
 All local for now
+
 --------------------------------------------------------------------------------
+
 shift + ins , in windows to paste
 clone . . . go to git hub find the url of the project then
 git clone https://github.com/dannysmith/guard-shopifythem.gitls
