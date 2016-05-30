@@ -120,7 +120,6 @@ most of the command are kept in bin so (bin/pwd = pwd)
 env (environment) = returns a list of the enviroment variables for the current user
 By using env | grep PATH, displays the value of a single enviroment variable which is PATH and outputs it to the terminal
 
-
 -----------------------------------------------------------------------------------
 
 Commiting is a two stage process
