@@ -95,3 +95,28 @@ Look for a logical and coherent structure.
 <li></li>(is a list item, it is an ordered list. )
 <ol></ol>(is an ordered list Order does matter.)
 <img src="image.jpg"> (this is an inline tag which will output an image.)
+
+---------------------------------------------------------------------------------------------
+
+<header>,
+<main>,
+<aside>,
+<article>,
+<footer>,
+<div id = "">
+<div class = "">, could change anything and be used anywhere
+
+Create a form in HTML.
+<form method = "" action "">
+<input type = "text" name = "title" id = "title">
+<label for = title> Todo item: </label>
+
+Always have a label tag for an input tag
+
+lacedeamon.spartaglobal.com/example_forms
+
+Add a contact form, name ,email , adressee (my name) and message
+Send a post with parameters name, email, addressee and message to
+lacedeamon.spartaglobal.com/contactfor/test
+You can test against/contactform/test
+You can see your messages at /contactform
