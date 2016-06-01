@@ -98,20 +98,107 @@ Look for a logical and coherent structure.
 
 ---------------------------------------------------------------------------------------------
 
-<header>,
-<main>,
-<aside>,
-<article>,
-<footer>,
-<div id = "">
-<div class = "">, could change anything and be used anywhere
+<header>, this tag is generally used at the top of the page and gives a semantic structure, 
+this is for the header section of the webpage, outputs the same way as a div
 
+<main>, 
+the main element represents the main content section of the body of a document or application 
+The main content section consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application
+
+<aside>, The aside element represents the additional information on the side of the page, for non-critical information
+<article>, 
+
+represents the complete or self contained, composition a document, page, application, or site
+<footer>, this tag is used at the bottom, a disclaimer or other links such as, links to Facebook page, twitter and so on
+
+<nav>, generally used for a nav bar
+
+
+
+
+
+<link>, can be used to add links to your page
+A good example of this tag is:
+
+<link rel=“stylesheet” type=“text/css” href=”main.css”>
+, this link will make the HTML page look at a CSS stylesheet named ‘main.css’ to style the page
+’type’ specifies the type file linked to, ‘rel’ specifies the relationship between the current file and the file being linked to, 
+in this case the relationship is ’stylesheet’, does not need a closing tag
+
+
+
+<br>, breaks will cause text to move to the next line, not good practice
+
+
+<div></div>, can be used to structure and group elements 
+<div id = "">, 
+
+must be unique, usually use camel case when entering names can be visited
+<div class=“container”>, the ‘class’ is the name of the container to use by CSS, to style the elements within the <div>.
+
+	<figure>, this tag will allow you to associate a caption with an image.
+
+		<img src=“img.jpg">
+
+			<figurecaption> (wrap the caption with this tag. )
+				
+<p>
+Text that is associated to the image.
+</p>
+		
+	</figurecaption>
+
+	</figure>
+
+
+<script>, can be used to add JavaScript to your page 
+
+
+
+	<video width=“320” height=“240” controls>, this tag is used to add a video to your web page 'width' and 'height' is setting the size of the video and ‘controls' is adding video controls such as play, pause and stop
+
+		<source src=“video-url.mp4” type=“video/mp4”>, 
+sets the url of the video to play, ’type’ sets the video format 
+
+	</video>
+
+
+
+<meta charset=“utf-8”/>, Tells the web browser which character set to use. In this case the character set is ‘utf-8'
+
+
+
+ 
 Create a form in HTML.
-<form method = "" action "">
-<input type = "text" name = "title" id = "title">
-<label for = title> Todo item: </label>
 
+<form method = "" action "">
+<input type = "text" name = "title" id = "title">, is to create a text to type information self closing
+<label for = title> Todo item: </label>, good practice to have this when creating input elements such as text box
 Always have a label tag for an input tag
+ <input type=“submit” value=“Save”>, creates a button, with a value of save to submit the information
+
+
+
+<input type=“file”>, to upload files
+
+
+<input type=“radio”> to create a multiple choice menu
+
+
+<select name=“select-choice” id=“select-choice”>, this is for drop down menus 
+
+<option value=“value1”>
+
+<textarea></textarea>, outputs a box for entering text
+
+
+<input type=“button”>, will create a button can be used with JS 
+
+
+<input type=“hidden">
+
+<input type=“email”>, will change the keyboard so that it would easier to add information
+
 
 lacedeamon.spartaglobal.com/example_forms
 
