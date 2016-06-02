@@ -131,9 +131,7 @@ in this case the relationship is ’stylesheet’, does not need a closing tag
 
 
 <div></div>, can be used to structure and group elements 
-<div id = "">, 
-
-must be unique, usually use camel case when entering names can be visited
+<div id = "">, must be unique, usually use camel case when entering names can be visited
 <div class=“container”>, the ‘class’ is the name of the container to use by CSS, to style the elements within the <div>.
 
 	<figure>, this tag will allow you to associate a caption with an image.
@@ -166,9 +164,6 @@ sets the url of the video to play, ’type’ sets the video format
 
 <meta charset=“utf-8”/>, Tells the web browser which character set to use. In this case the character set is ‘utf-8'
 
-
-
- 
 Create a form in HTML.
 
 <form method = "" action "">
@@ -194,9 +189,14 @@ Always have a label tag for an input tag
 <input type=“email”>, will change the keyboard so that it would easier to add information
 
 lacedeamon.spartaglobal.com/example_forms
+microformats
 
-Add a contact form, name ,email , adressee (my name) and message
-Send a post with parameters name, email, addressee and message to
-lacedeamon.spartaglobal.com/contactfor/test
-You can test against/contactform/test
-You can see your messages at /contactform
+<address>, use for twitter links and contact information
+<time datetime="2014-4-30"> last tuesday </time>
+use div for images makes it easier to use css on
+
+W-CAG
+BS 8878:2010
+WAI-ARIA
+could use <main role="main">, use Aria roles for accessibilty when needed
+

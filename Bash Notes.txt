@@ -197,3 +197,4 @@ its just convention to say origin
 
 git push origin master, push up to the remote origin and the branch is master
 
+sha key, so dont have to log in often
