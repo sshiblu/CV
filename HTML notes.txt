@@ -177,13 +177,9 @@ Create a form in HTML.
 Always have a label tag for an input tag
  <input type=“submit” value=“Save”>, creates a button, with a value of save to submit the information
 
-
-
 <input type=“file”>, to upload files
 
-
 <input type=“radio”> to create a multiple choice menu
-
 
 <select name=“select-choice” id=“select-choice”>, this is for drop down menus 
 
@@ -191,14 +187,11 @@ Always have a label tag for an input tag
 
 <textarea></textarea>, outputs a box for entering text
 
-
 <input type=“button”>, will create a button can be used with JS 
 
-
-<input type=“hidden">
+<input type=“hidden">, just 
 
 <input type=“email”>, will change the keyboard so that it would easier to add information
-
 
 lacedeamon.spartaglobal.com/example_forms
 
