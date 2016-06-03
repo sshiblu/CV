@@ -84,7 +84,7 @@ Look for a logical and coherent structure.
     </body>
 </html>
 
-<stong>BOLD TEXT</strong> (This is to make the text bold, inline tag)
+<strong>BOLD TEXT</strong> (This is to make the text bold, inline tag)
 <b></b>(This will make text bold for keywords)
 
 <em>Emphasized text</em> (This will be used for text you are trying to emphasize, inline.)
@@ -113,10 +113,6 @@ represents the complete or self contained, composition a document, page, applica
 
 <nav>, generally used for a nav bar
 
-
-
-
-
 <link>, can be used to add links to your page
 A good example of this tag is:
 
@@ -125,10 +121,7 @@ A good example of this tag is:
 ’type’ specifies the type file linked to, ‘rel’ specifies the relationship between the current file and the file being linked to, 
 in this case the relationship is ’stylesheet’, does not need a closing tag
 
-
-
 <br>, breaks will cause text to move to the next line, not good practice
-
 
 <div></div>, can be used to structure and group elements 
 <div id = "">, must be unique, usually use camel case when entering names can be visited
@@ -151,16 +144,12 @@ Text that is associated to the image.
 
 <script>, can be used to add JavaScript to your page 
 
-
-
 	<video width=“320” height=“240” controls>, this tag is used to add a video to your web page 'width' and 'height' is setting the size of the video and ‘controls' is adding video controls such as play, pause and stop
 
 		<source src=“video-url.mp4” type=“video/mp4”>, 
 sets the url of the video to play, ’type’ sets the video format 
 
 	</video>
-
-
 
 <meta charset=“utf-8”/>, Tells the web browser which character set to use. In this case the character set is ‘utf-8'
 
@@ -170,7 +159,7 @@ Create a form in HTML.
 <input type = "text" name = "title" id = "title">, is to create a text to type information self closing
 <label for = title> Todo item: </label>, good practice to have this when creating input elements such as text box
 Always have a label tag for an input tag
- <input type=“submit” value=“Save”>, creates a button, with a value of save to submit the information
+<input type=“submit” value=“Save”>, creates a button, with a value of save to submit the information
 
 <input type=“file”>, to upload files
 
@@ -188,6 +177,8 @@ Always have a label tag for an input tag
 
 <input type=“email”>, will change the keyboard so that it would easier to add information
 
+<style>, can use css in the original html file in the head, dont use if your using a spreadsheet
+
 lacedeamon.spartaglobal.com/example_forms
 microformats
 
@@ -200,3 +191,12 @@ BS 8878:2010
 WAI-ARIA
 could use <main role="main">, use Aria roles for accessibilty when needed
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<hr>, horizontal line
+
+The element i want then however many childs i want:
+
+	ul>li*17
+
+Inside the anchor tag, target="_blank", opens a new tab for a link from Qasim

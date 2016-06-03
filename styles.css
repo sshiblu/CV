@@ -1,6 +1,31 @@
-h2 /*This is the selector*/ 
+body
 {
-    color: dimgrey;
-    background-color: #a1a1a1;
-    font-size: 12px;
+font-family: "Calibri";
+font-size: 16px;         
+}
+
+
+header
+{
+    background-color: navy
+    
+}
+
+h1  
+{
+    color: white;
+    font-size: 3em;
+    margin=0;
+    border=0;
+}
+
+h2{
+    color: white;
+    font-size: 2em;
+    
+}
+
+p{
+    color: brown;
+    
 }
