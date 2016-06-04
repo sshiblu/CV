@@ -1,31 +1,207 @@
+/*  Settings */
+* 
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    background-color: ghostwhite;
+}
+
 body
 {
-font-family: "Calibri";
-font-size: 16px;         
+    font-family: "Trebuchet MS";
+    font-size: 16px; 
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    background-color: white;
+    padding: 3px;
 }
 
-
-header
+.clearfix:after 
 {
-    background-color: navy
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: none;
     
 }
+
+/*  H1 and H2   */
 
 h1  
 {
     color: white;
-    font-size: 3em;
-    margin=0;
+    font-size: 40px;
+    margin: 0;
     border=0;
+    position: relative;
+    top: 0px;
+    left:10px;
+    
 }
 
-h2{
+section > h2
+{
+    border-bottom: 2px solid midnightblue; 
+    border-top: 2px solid midnightblue; 
+    text-align: center;
+    
+}
+
+h3
+{
+    display: block;
+    margin-bottom: -20px;
+    margin-top: 0px;
+}
+/*  Header  */
+
+header
+{
+    background-color: midnightblue;
+}
+
+nav > ul
+{
+    float: right;
+    padding-bottom: 0px;
+    padding-left: 0px; 
+    padding-right: 5px;
+    margin-bottom: 2px;
+}
+
+nav > ul > li  
+{
+    display: inline;
+    text-decoration: none;
+    padding: 0;
+ 
+}
+
+nav > ul > li:after  
+{
+    content:"|";
     color: white;
-    font-size: 2em;
+ 
+}
+
+nav > ul > li:last-child:after  
+{
+    content:"";
+    color: white;
+ 
+}
+
+
+nav > ul > li > a 
+{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
     
 }
 
-p{
-    color: brown;
+/*  About me   */
+
+.intro
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+        
+}
+
+.intro img 
+{
+    border-radius: 50px;
+}
+
+/*  Education section   */
+
+/*  Skills section left as it is     */
+
+/*  Employment History left as it is*/
+
+/*  Hobbies section left as it is */
+
+/*  Contact me    */
+
+.form 
+{
+     border: 2px solid midnightblue;
+     width: 50%;
+     padding-top:5px; 
+     padding-right: 15px;
+     padding-bottom: 10px;
+     padding-left: 6px;
+         
+}
+
+.form > h3
+{
+    margin: 2px;
+}
+input
+{
+    display: block;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+    margin: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+textarea
+{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
     
+}
+
+input[type=submit]
+{
+    font-weight: bold;
+}
+
+.medium
+{
+    
+    
+}
+
+
+
+
+
+
+/*  Footer  */
+
+footer
+{
+    background-color: midnightblue;
+}
+
+footer > p
+{
+    color: white;
+    padding: 20px;
+    margin-bottom: 0;
+    text-align: center;
 }

@@ -12,31 +12,36 @@
         <header> 
         
             <h1> Shorof Shiblu </h1>            
-            <nav >
+            <nav class="clearfix">
                 <ul>
                     <li> <a href="#Education" > Education </a></li>
                     <li> <a href="#Skills" > Skills </a></li>
-                    <li> <a href="Employment-History" > Employment History </a></li>
-                    <li> <a href="#Hobbies" > Interests/Hobbies </a></li> 
+                    <li> <a href="#Employment-History" > Employment History </a></li>
+                    <li> <a href="#Hobbies" > Interests/Hobbies </a></li>
+                    <li> <a href="#Contact" > Contact </a></li>
+
                 </ul>    
             </nav>
             
         </header>	
    
         <main>
-                <img src="../Pictures/IMAG0704.jpg" style = "width:200px; height:234px">
-                <p> An honest, enthusiastic and curious individual. With a keen sense of humor and idealistic outlook on life, always looking to learn and constantly improve himself. Currently taking part in an intense 12 week SDET learning various different languages, classes and methodologies ultimately hoping to establish himself in the IT industry. </p>
-                <p> An avid watcher of comedy and old time vaudeville such as the stylings of Martin and Lewis, Don Rickles and Groucho Marx. Also enjoys playing or watching snooker and listening to Italian composer Ludovico Einaudi. Appealing to his meticulous nature he enjoys sporadic quotes and poems. An example of one being: </p>
-                <p> "My candle burns at both ends; It will not last the night; But ah, my foes, and oh, my friends &#45; It gives a lovely light!" - Edna St.Vincent </p>   
+                <div class = "intro">
+                    <img src="../Pictures/IMAG0704.jpg" style = "width:200px; height:234px">
+                    <p> An honest, enthusiastic and curious individual. With a keen sense of humor and idealistic outlook on life, always looking to learn and constantly improve himself. Currently taking part in an intense 12 week SDET learning various different languages, classes and methodologies ultimately hoping to establish himself in the IT industry. </p>
+                    <p> An avid watcher of comedy and old time vaudeville such as the stylings of Martin and Lewis, Don Rickles and Groucho Marx. Also enjoys playing or watching snooker and listening to Italian composer Ludovico Einaudi. Appealing to his meticulous nature he enjoys sporadic quotes and poems. An example of one being: </p>
+                    <p> "My candle burns at both ends; It will not last the night; But ah, my foes, and oh, my friends &#45; It gives a lovely light!" - Edna St.Vincent </p2>  
+                </div>
+                 
             <section id = "Education">
                 <h2> Education </h2>
                 <div > 
                     <h3> University of Westminster</h3>
-                    <p> <time datetime="2012-09"> September 2012 </time> - <time datetime="2015-08"> August 2015 </time> </p>
+                    <p> <time datetime="2012-09"> September 2012 </time> - <time datetime="2015-08"> August 2015 </time>  </p> 
                     <ul>
                         <li> Electronic Engineering BSc 2:2 Honours </li>
                     </ul> 
-                    <p> During the course of my electronics degree, I believe I have demonstrated my abilities both as an individual also as a team player. During the second year, a joint task was given to create an electronic micro mouse that would ultimately traverse an 8 by 8 maze. The mouse itself had both a hardware and software component. Although, my role primarily designated as the programmer I aided in the hardware construction of the mouse such as the motor and sensor circuitry. An MBED board was selected to programme the mouse as it utilised the more versatile C++ language. A &#39;Left Priority&#39; algorithm was then created, where the mouse would primarily sense for an opening in the left wall as opposed to the front and right wall. If an opening is sensed the mouse would carry out the corresponding manoeuvre i.e. a left turn. By using the algorithm the mouse successfully completed the maze. </p>
+                    <p > During the course of my electronics degree, I believe I have demonstrated my abilities both as an individual also as a team player. During the second year, a joint task was given to create an electronic micro mouse that would ultimately traverse an 8 by 8 maze. The mouse itself had both a hardware and software component. Although, my role primarily designated as the programmer I aided in the hardware construction of the mouse such as the motor and sensor circuitry. An MBED board was selected to programme the mouse as it utilised the more versatile C++ language. A &#39;Left Priority&#39; algorithm was then created, where the mouse would primarily sense for an opening in the left wall as opposed to the front and right wall. If an opening is sensed the mouse would carry out the corresponding manoeuvre i.e. a left turn. By using the algorithm the mouse successfully completed the maze. </p>
                 </div>    
 
                 <div >
@@ -117,48 +122,36 @@
                 <p> Beyond academia, I have a great passion for sports as I find it a great way to alleviate stress. Particularly playing football and snooker. By playing football, I am able to improve my skills as a team player working with other team members in order to carry out a certain objective i.e. defending against the opposition. Whereas, by playing pool/snooker I analyse the situation and try to take the best possible action in a given scenario, thus polishing up my skills as an individual. I am also an avid watcher of comedy and old time vaudeville, such as the stylings of comedic duo Martin and Lewis&#44; Don Rickles and Milton Berle. </p>
             </section> 
              
-            <section class = "Form">
-                <h2> Contact Form </h2> 
-                <form action="http://lacedeamon.spartaglobal.com/contactform/" method="post">  Use these tags when creating contact form
+            <section id = "Contact">
+                <h2> Contact </h2>              
+                <div class="form">
+                    <h3> Contact Form </h3>
+                    <form action="http://lacedeamon.spartaglobal.com/contactform/" method="post"> 
 
-                    <label for="name"> Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Your Name . . ." value tabindex="1">
-                    <label for="email"> Email: </label>
-                    <input type="email" name="email" id="email" placeholder="Your Email Address . . ." value tabindex="2">
-                    <input type="hidden" name="addressee" id="addressee" value="Shorof Shiblu">
-                    <label for="textarea"> Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message . . ." value tabindex="3"></textarea>
-                    <input type="submit" value="Submit"> 
+                        <label for="name"> Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Your Name . . ." value tabindex="1">
+                        <label for="email"> Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Your Email Address . . ." value tabindex="2">
+                        <input type="hidden" name="addressee" id="addressee" value="Shorof Shiblu">
+                        <label for="textarea"> Message: </label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message . . ." value tabindex="3"></textarea>
+                        <input type="submit" value="Submit"> 
 
-                </form>
-            </section>
-             
-            <footer >
-                <address>                   
-                     
-                    <div class= "Mail">
-                        <a href="mailto:shorof.uddin22@gmail.com"> <img src="../../Pictures/message.png " style = "width:100px; height:100px" > </a>
-                    </div> 
-                    <div class="Twitter">
-                        <a href="https://twitter.com/sshiblu1" target="_blank"> <img src="../../Pictures/twitter.png" style = "width:100px; height:100px" ></a> 
-                    </div> 
-                    <div class="Linkedin">
-                        <a href="https://www.linkedin.com/in/shorof-shiblu-6391b5121?trk=nav_responsive_tab_profile" target="_blank"> <img src="../../Pictures/linkedin.png" style = "width:100px; height:100px"> </a> 
-                    </div>
-                    <div class="Medium">   
-                        <a href="https://medium.com/@sshiblu" target="_blank"> <img src="../../Pictures/medium.png" style = "width:115px; height:115px" > </a> 
-                    </div> 
-                    <div class="Github">
-                        <a href="https://github.com/sshiblu" target="_blank"> <img src="../../Pictures/github-logo.png" style = "width:100px; height:100px" > </a>
-                    </div> 
-                                    
-                    <p> Address: 44 Blythe Street, London, E2 6LN </p>
-                    <p> Telephone Number: 07572503790 </p>  
-                    
-                </address>
+                    </form>
+                </div>
                 
+                <div class="medium">
+                    <h3> Social Medium </h3>
+                    <a href="mailto:shorof.uddin22@gmail.com"> <img src="../Pictures/message.png " style = "width:100px; height:100px" > </a>
+                    <a href="https://twitter.com/sshiblu1" target="_blank"> <img src="../Pictures/twitter.png" style = "width:100px; height:100px" ></a> 
+                    <a href="https://www.linkedin.com/in/shorof-shiblu-6391b5121?trk=nav_responsive_tab_profile" target="_blank"> <img src="../Pictures/linkedin.png" style = "width:100px; height:100px"> </a> 
+                    <a href="https://medium.com/@sshiblu" target="_blank"> <img src="../Pictures/medium.png" style = "width:115px; height:115px" > </a> 
+                    <a href="https://github.com/sshiblu" target="_blank"> <img src="../Pictures/github-logo.png" style = "width:100px; height:100px" > </a>
+                </div>
+                
+            </section>
+            <footer>
                 <p> Copyright &copy; Shorof Shiblu</p>
-
             </footer>
              
         </main> 
