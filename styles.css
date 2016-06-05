@@ -13,13 +13,13 @@ body
 {
     font-family: "Trebuchet MS";
     font-size: 16px; 
-    width: 600px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     letter-spacing: 1px;
     line-height: 1.5;
     background-color: white;
-    padding: 3px;
+  /*  padding: 10%;*/
 }
 
 .clearfix:after 
@@ -102,7 +102,7 @@ nav > ul > li:last-child:after
 nav > ul > li > a 
 {
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     
 }
@@ -229,7 +229,10 @@ textarea
 input[type=submit]
 {
     font-weight: bold;
+    cursor: pointer;
 }
+
+
 
 /*    Icons  */
 
@@ -244,7 +247,7 @@ input[type=submit]
     padding-left: 5px;
     width: 20%;
     position: relative;
-    left: 20%;
+    left: 30%;
 }
 
 .medium
